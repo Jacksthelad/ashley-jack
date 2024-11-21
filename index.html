@@ -19,12 +19,12 @@
         }
     </style>
 </head>
-<body class="bg-dark-blue text-dark-blue">
-    <div class="text-center max-w-5xl mx-auto flex justify-center">
-        <div class="bg-amber-300 rounded-2xl my-8">
-            <h1 class="text-10xl text-dark-blue my-6 mx-12">
+<body class="bg-dark-blue text-dark-blue space-y-10 md:space-y-20">
+    <div class="px-8 text-center max-w-5xl mx-auto flex justify-center">
+        <div class="bg-amber-300 rounded-2xl mt-16">
+            <h1 class="text-8xl md:text-10xl text-dark-blue my-6 mx-12">
                 <span class="block">Jack</span>
-                <span class="text-5xl block">the web developer</span>
+                <span class="text-3xl md:text-5xl block">the web developer</span>
             </h1>
         </div>      
     </div>
@@ -32,9 +32,36 @@
         <div class="w-full lg:w-1/2 bg-amber-300 rounded-2xl ">
             <img class="w-full rounded-2xl" src="assets/images/portrait.jpg" alt="Portrait of Ashley Jack">
         </div>
-        <div class="w-full lg:w-1/2 bg-amber-300 rounded-2xl p-8 font-semibold">
+        <div class="w-full lg:w-1/2 bg-amber-300 rounded-2xl py-8 px-10 font-semibold">
             <h2 class="text-5xl">Hello!</h2>
-            <p class="text-xl">I'm Jack, a freelance web developer with a passion for creating beautiful, functional and reliable websites.</br>With expertise in HTML, CSS, JavaScript, a keen eye for design and an emphasis on reliability, I help businesses and individuals establish their online presence with custom-tailored solutions.</p>
+            <p class="text-xl mt-4">I'm Jack, a freelance web developer with a passion for creating beautiful, functional and reliable websites.</br>With expertise in HTML, CSS, JavaScript, a keen eye for design and an emphasis on reliability, I help businesses and individuals establish their online presence with custom-tailored solutions.</p>
+        </div>
+    </div>
+
+    <div class="px-8 max-w-5xl mx-auto">
+        <div class="bg-amber-300 rounded-2xl">
+            <!-- Netlify Form -->
+            <div class="max-w-3xl mx-auto px-8 py-10">
+                <h2 class="text-5xl text-center font-semibold">Want a yip yap?</h2>
+                <form name="contact" method="POST" data-netlify="true" class="space-y-4">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="flex flex-col">
+                        <label for="name" class="text-xl font-semibold">Name</label>
+                        <input type="text" id="name" name="name" class="p-2 rounded-md border border-dark-blue" required>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email" class="text-xl font-semibold">Email</label>
+                        <input type="email" id="email" name="email" class="p-2 rounded-md border border-dark-blue" required>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="message" class="text-xl font-semibold">Message</label>
+                        <textarea id="message" name="message" rows="4" class="p-2 rounded-md border border-dark-blue" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="text-3xl bg-dark-blue text-amber-300 px-6 py-2 rounded-full font-semibold hover:bg-hover-dark-blue hover:shadow-3xl hover:shadow-slate-600">Send</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
