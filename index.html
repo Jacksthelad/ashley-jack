@@ -43,8 +43,7 @@
             <!-- Netlify Form -->
             <div class="max-w-3xl mx-auto px-8 py-10">
                 <h2 class="text-5xl text-center font-semibold">Want a yip yap?</h2>
-                <form name="contact" method="POST" data-netlify="true" class="space-y-4">
-                    <input type="hidden" name="form-name" value="contact">
+                <form name="contact" method="POST" netlify class="space-y-4">
                     <div class="flex flex-col">
                         <label for="name" class="text-xl font-semibold">Name</label>
                         <input type="text" id="name" name="name" class="p-2 rounded-md border border-dark-blue" required>
@@ -56,6 +55,9 @@
                     <div class="flex flex-col">
                         <label for="message" class="text-xl font-semibold">Message</label>
                         <textarea id="message" name="message" rows="4" class="p-2 rounded-md border border-dark-blue" required></textarea>
+                    </div>
+                    <div>
+                        <label class="hidden">Don’t fill this out if you're human: <input name="bot-field" /></label>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="text-3xl bg-dark-blue text-amber-300 px-6 py-2 rounded-full font-semibold hover:bg-hover-dark-blue hover:shadow-3xl hover:shadow-slate-600">Send</button>
