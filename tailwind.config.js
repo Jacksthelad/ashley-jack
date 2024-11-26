@@ -13,7 +13,7 @@ module.exports = {
         '10xl': ['10rem', { lineHeight: '0.8' }], // Adjust font size and line-height
       },
       boxShadow: {
-        '3xl': '1px 2px 2px 1px',
+        '3xl': '1px 2px 0px 1px',
       },
     },
   },
