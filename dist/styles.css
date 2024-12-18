@@ -655,6 +655,18 @@ video {
   background-color: rgb(25 40 65 / var(--tw-bg-opacity));
 }
 
+.bg-svg-pattern {
+  background-image: url('../assets/images/jack-the-web-developer.svg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-repeat {
+  background-repeat: repeat;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -693,9 +705,9 @@ video {
   text-align: center;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
@@ -718,11 +730,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-semibold {
   font-weight: 600;
 }
@@ -741,11 +748,6 @@ video {
   --tw-shadow: 1px 2px 0px 1px;
   --tw-shadow-colored: 1px 2px 0px 1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-slate-600 {
-  --tw-shadow-color: #475569;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .shadow-slate-800 {

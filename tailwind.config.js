@@ -15,6 +15,9 @@ module.exports = {
       boxShadow: {
         '3xl': '1px 2px 0px 1px',
       },
+      backgroundImage: {
+        'svg-pattern': "url('../assets/images/jack-the-web-developer.svg')",
+      },
     },
   },
   plugins: [],
