@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Jack The Web Developer">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=hind:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@700&family=Hind:wght@500&display=swap" rel="stylesheet">
     <link href="./dist/styles.css" rel="stylesheet">
     <style>
         body {
@@ -21,19 +21,23 @@
             font-weight: 500;
         }
         h1 {
+            font-family: "Eczar", serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            font-size: clamp(1.5rem, -1.7272727272727275rem + 19.886363636363637vw, 5rem);
+        }
+        .roboto {
             font-family: "Roboto", sans-serif;
             font-weight: 900;
-            font-size: 2.25rem;
-            font-size: clamp(2.25rem, -1.7272727272727275rem + 19.886363636363637vw, 11rem);
         }
     </style>
 </head>
 <body class="my-20 bg-dark-blue text-dark-blue space-y-10 md:space-y-20 bg-svg-pattern bg-repeat bg-cover">
     <div class="px-8 text-center max-w-5xl mx-auto flex justify-center">
         <div class="bg-amber-300 rounded-2xl">
-            <h1 class="text-8xl md:text-10xl text-dark-blue my-6 mx-12">
-                <span class="block">Jack</span>
-                <span class="text-2xl md:text-5xl block">The Web Developer</span>
+            <h1 class="text-8xl md:text-10xl text-dark-blue my-6 mx-12 space-y-4">
+                <span class="block mt-8">Jack</span>
+                <span class="roboto text-2xl md:text-5xl block">The Web Developer</span>
             </h1>
         </div>      
     </div>
