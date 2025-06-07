@@ -1,6 +1,6 @@
 module.exports = {
   content: [
-    "./index.html",
+    "./dist/**/*.html",
   ],
   theme: {
     extend: {
@@ -16,7 +16,7 @@ module.exports = {
         '3xl': '1px 2px 0px 1px',
       },
       backgroundImage: {
-        'svg-pattern': "url('../assets/images/jack-the-web-developer.svg')",
+        'svg-pattern': "url('assets/images/jack-the-web-developer.svg')",
       },
     },
   },
