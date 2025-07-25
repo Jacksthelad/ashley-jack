@@ -6,8 +6,8 @@ module.exports = {
     extend: {
       colors: {
         'dark-blue': '#192841',
-        'hover-dark-blue': '#0e1725',
-        'focus-dark-blue': '030508',
+        'hover-dark-blue': '#283C59',
+        'focus-dark-blue': '#121E30',
       },
       fontSize: {
         '10xl': ['10rem', { lineHeight: '0.8' }], // Adjust font size and line-height

@@ -62,7 +62,7 @@
     }
     </script>
 </head>
-<body class="my-20 bg-dark-blue text-dark-blue space-y-10 md:space-y-20 bg-svg-pattern bg-repeat bg-cover">
+<body class="mt-20 bg-dark-blue text-dark-blue space-y-10 md:space-y-20 bg-svg-pattern bg-repeat bg-cover">
     <div class="px-8 text-center max-w-5xl mx-auto flex justify-center">
         <div class="bg-amber-300 rounded-2xl">
             <h1 class="text-8xl md:text-10xl text-dark-blue my-6 mx-12 space-y-4">
@@ -82,7 +82,7 @@
     </div>
 
     <div class="px-8 max-w-5xl mx-auto">
-        <div class="bg-amber-300 rounded-2xl">
+        <div class="bg-amber-300 rounded-2xl" id="contact-form-section">
             <div class="mx-auto py-8 px-4 md:mx-10">
                 <h2 class="mb-4 text-3xl sm:text-5xl text-center font-semibold">Want a chit chat?</h2>
                 <form class="space-y-4" name="contact" method="POST" netlify>
@@ -106,11 +106,20 @@
                         <label class="hidden">Don’t fill this out if you're human: <input name="bot-field" /></label>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="w-full max-w-sm text-4xl bg-dark-blue text-amber-300 px-12 py-8 rounded-2xl font-semibold shadow-3xl shadow-slate-800 hover:bg-hover-dark-blue hover:shadow-3xl hover:shadow-slate-600 hover:-translate-x-1 hover:-translate-y-1">Send</button>
+                        <button type="submit" class="w-full max-w-sm text-4xl bg-dark-blue shadow-sm text-amber-300 px-12 py-8 rounded-2xl font-semibold duration-300 ease-out hover:bg-hover-dark-blue hover:shadow-md hover:-translate-y-1 focus:bg-focus-dark-blue focus:shadow-xs focus:translate-y-1">Send</button>
                     </div>
                 </form>                
             </div>
         </div>
-    </div>    
+    </div>
+
+    <footer class="bg-amber-300 text-dark-blue text-amber-300 rounded-t-2xl py-8 px-8 text-center mt-16">
+        <p class="text-lg mb-2">&copy; <span id="current-year"></span> Jack The Web Developer. All rights reserved.</p>
+        <p><a href="privacy-policy.html" class="underline font-semibold hover:text-amber-500">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
