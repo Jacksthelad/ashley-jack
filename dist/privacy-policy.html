@@ -37,12 +37,12 @@
         }
     </style>
 </head>
-<body class="py-20 bg-dark-blue space-y-10 md:space-y-20 bg-svg-pattern bg-repeat bg-cover min-h-screen flex flex-col">
+<body class="mt-20 bg-dark-blue space-y-10 md:space-y-20 bg-svg-pattern bg-repeat bg-cover min-h-screen flex flex-col">
 
     <div class="flex-grow">
         <div class="max-w-4xl mx-auto my-10 px-8 py-10 bg-amber-300 text-dark-blue rounded-2xl">
             <h1 class="text-4xl sm:text-5xl lg:text-6xl text-center mb-8">Privacy Policy</h1>
-            <p class="mb-4 text-lg"><strong>Last Updated:</strong> [Insert Today's Date - e.g., July 25, 2025]</p>
+            <p class="mb-4 text-lg"><strong>Last Updated: </strong>July 25, 2025</p>
             
             <p class="mb-4 text-lg leading-relaxed">This Privacy Policy describes how <strong>Jack The Web Developer</strong> ("we," "us," or "our") collects, uses, and discloses your personal information when you visit and interact with our website, https://jackthewebdeveloper.co.uk (the "Site"), particularly when you use our contact forms powered by Netlify Forms.</p>
 
@@ -109,15 +109,15 @@
             <p class="mb-2 text-lg leading-relaxed">By email: <a href="mailto:jack@jackthewebdeveloper.co.uk" class="text-dark-blue underline font-semibold hover:text-hover-dark-blue">jack@jackthewebdeveloper.co.uk</a></p>
             <p class="mb-4 text-lg leading-relaxed">By visiting this page on our website: <a href="https://jackthewebdeveloper.co.uk/#contact-form-section" class="text-dark-blue underline font-semibold hover:text-hover-dark-blue">https://jackthewebdeveloper.co.uk</a></p>
         </div>
-    </div> {/* End flex-grow */}
+    </div>
 
-    <footer class="bg-dark-blue text-amber-300 py-10 px-8 text-center mt-16">
-        <p class="text-lg mb-2">&copy; <span id="current-year-privacy"></span> Jack The Web Developer. All rights reserved.</p>
-        <p><a href="privacy-policy.html" class="text-amber-300 underline font-semibold hover:text-amber-400">Privacy Policy</a></p>
+    <footer class="bg-amber-300 text-dark-blue text-amber-300 rounded-t-2xl py-8 px-8 text-center mt-16">
+        <p class="text-lg mb-2">&copy; <span id="current-year"></span> Jack The Web Developer. All rights reserved.</p>
+        <p><a href="privacy-policy.html" class="underline font-semibold hover:text-amber-500">Privacy Policy</a></p>
     </footer>
 
     <script>
-        document.getElementById('current-year-privacy').textContent = new Date().getFullYear();
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
