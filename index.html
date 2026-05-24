@@ -89,7 +89,7 @@
                         <label class="hidden">Don’t fill this out if you're human: <input name="bot-field" /></label>
                     </div>
                     <div class="text-center">
-                        <button type="submit" class="w-full max-w-sm text-4xl bg-dark-blue shadow-sm text-amber-300 px-12 py-8 rounded-2xl font-semibold duration-300 ease-out hover:bg-hover-dark-blue hover:shadow-md hover:-translate-y-1 focus:bg-focus-dark-blue focus:shadow-xs focus:translate-y-1">Send</button>
+                        <button type="submit" class="cursor-pointer w-full max-w-sm text-4xl bg-dark-blue shadow-sm text-amber-300 px-12 py-8 rounded-2xl font-semibold duration-300 ease-out hover:bg-hover-dark-blue hover:shadow-md hover:-translate-y-1 focus:bg-focus-dark-blue focus:shadow-xs focus:translate-y-1">Send</button>
                     </div>
                 </form>                
             </div>
@@ -97,15 +97,33 @@
     </div>
 
     <div class="px-8 max-w-5xl mx-auto">
-        <h2 class="text-3xl sm:text-5xl font-semibold text-amber-300 mb-8 text-center">My Work</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="columns-1 md:columns-2 gap-8 gap-y-8">
+            <h2 class="break-inside-avoid text-3xl sm:text-5xl font-semibold text-blue-950 bg-amber-300 pt-7 pb-8 px-4 md:px-10 mb-8 text-center rounded-2xl">My Work</h2>
+
+            <div class="break-inside-avoid p-6 bg-amber-300 rounded-2xl overflow-hidden">
+                <a href="https://www.luxuryboltholes.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/luxury-boltholes.png" alt="Luxury Boltholes Home Screen" class="w-full object-cover rounded-t-lg">
+                </a>
+                <div class="mt-4">
+                    <h3 class="text-2xl font-semibold mb-1">Client Name</h3>
+                    <p class="text-base mb-4">A short description of what you built for them and what the project involved.</p>
+                    <a href="https://www.luxuryboltholes.com/" target="_blank" rel="noopener noreferrer" class="inline-block font-semibold underline hover:text-amber-600">Visit website &rarr;</a>
+                    <!-- Optional testimonial quote - remove the comment tags to show it -->
+                    <!--
+                    <blockquote class="mt-4 border-l-4 border-dark-blue pl-4 italic text-base">
+                        "Their testimonial quote goes here."
+                        <cite class="block mt-2 not-italic font-semibold">&mdash; Client Name</cite>
+                    </blockquote>
+                    -->
+                </div>
+            </div>
 
             <!-- Testimonial card -->
-            <div class="bg-amber-300 rounded-2xl overflow-hidden">
+            <div class="break-inside-avoid mb-8 p-6 bg-amber-300 rounded-2xl overflow-hidden">
                 <a href="https://www.luxuryboltholes.com/" target="_blank" rel="noopener noreferrer">
                     <img src="assets/images/luxury-boltholes.png" alt="Luxury Boltholes Home Screen" class="w-full object-cover">
                 </a>
-                <div class="p-6">
+                <div class="mt-4">
                     <h3 class="text-2xl font-semibold mb-1">Client Name</h3>
                     <p class="text-base mb-4">A short description of what you built for them and what the project involved.</p>
                     <a href="https://www.luxuryboltholes.com/" target="_blank" rel="noopener noreferrer" class="inline-block font-semibold underline hover:text-amber-600">Visit website &rarr;</a>
